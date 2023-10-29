@@ -1,0 +1,19 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:50212/
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:50212/hello/User
+Content-Type: application/json
+
+{
+    "id": {{$random.uuid}},
+    "price": {{$random.integer()}},
+    "ts": {{$timestamp}},
+    "value": "content"
+}
+
+###
+
